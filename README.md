@@ -1,2 +1,2 @@
 # AlienInvasion
-A Space Invaders type game written in Python.
+A game similar to Space Invaders written in Python.
