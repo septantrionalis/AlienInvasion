@@ -1,0 +1,129 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="(Other)"
+    WorkingDir=".">
+    <Config
+        Name="Release"
+        OutputFile=""
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec CmdLine='".exe"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <CustomFolders>
+        <Folder
+            Name="Source Files"
+            Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+            GUID="{A98CC985-0F27-4B8F-A55F-AE109A49EF0D}"/>
+        <Folder
+            Name="Header Files"
+            Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+            GUID="{1AE216E8-26CA-4FD3-89D1-4FDE3623C2DB}"/>
+        <Folder
+            Name="Resource Files"
+            Filters="*.ico;*.cur;*.dlg"
+            GUID="{F4E9A634-941B-4753-9EE3-E472030A95EA}"/>
+        <Folder
+            Name="Bitmaps"
+            Filters="*.bmp"
+            GUID="{E303089C-B0F2-49E2-ACFC-FA2388420F33}"/>
+        <Folder
+            Name="Other Files"
+            Filters=""
+            GUID="{39357D7A-B95F-4011-832B-08F2C46F2D47}"/>
+    </CustomFolders>
+    <Files AutoFolders="DirectoryView">
+        <Folder Name="src">
+            <Folder Name="alieninvasion">
+                <Folder Name="__pycache__">
+                    <F N="src/alieninvasion/__pycache__/bullet.cpython-36.pyc"/>
+                    <F N="src/alieninvasion/__pycache__/game_functions.cpython-36.pyc"/>
+                    <F N="src/alieninvasion/__pycache__/settings.cpython-36.pyc"/>
+                    <F N="src/alieninvasion/__pycache__/ship.cpython-36.pyc"/>
+                </Folder>
+                <Folder Name="images">
+                    <F N="src/alieninvasion/images/ship.bmp"/>
+                </Folder>
+                <F N="src/alieninvasion/alien.py"/>
+                <F N="src/alieninvasion/alien_invasion.py"/>
+                <F N="src/alieninvasion/bullet.py"/>
+                <F N="src/alieninvasion/game_functions.py"/>
+                <F N="src/alieninvasion/GameStats.py"/>
+                <F N="src/alieninvasion/settings.py"/>
+                <F N="src/alieninvasion/ship.py"/>
+            </Folder>
+            <Folder Name="bbs">
+                <F N="src/bbs/areas.bbs"/>
+                <F N="src/bbs/DupeCheck.py"/>
+            </Folder>
+            <Folder Name="class">
+                <Folder Name="__pycache__">
+                    <F N="src/class/__pycache__/Car.cpython-36.pyc"/>
+                    <F N="src/class/__pycache__/ElectricCar.cpython-36.pyc"/>
+                </Folder>
+                <F N="src/class/Car.py"/>
+                <F N="src/class/Drive.py"/>
+                <F N="src/class/ElectricCar.py"/>
+            </Folder>
+            <Folder Name="testPygame">
+                <F N="src/testPygame/java_logo.png"/>
+                <F N="src/testPygame/testPygame.py"/>
+            </Folder>
+            <Folder Name="unittest">
+                <Folder Name="11-1">
+                    <F N="src/unittest/11-1/city_functions.py"/>
+                    <F N="src/unittest/11-1/test_cities.py"/>
+                </Folder>
+                <Folder Name="11-3">
+                    <F N="src/unittest/11-3/Employee.py"/>
+                    <F N="src/unittest/11-3/TestEmployee.py"/>
+                </Folder>
+                <Folder Name="example">
+                    <F N="src/unittest/example/name_function.py"/>
+                    <F N="src/unittest/example/names.py"/>
+                    <F N="src/unittest/example/test_name_function.py"/>
+                </Folder>
+            </Folder>
+            <F N="src/test.py"/>
+        </Folder>
+    </Files>
+</Project>
